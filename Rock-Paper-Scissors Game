@@ -1,0 +1,18 @@
+import random
+
+computer_options = ['rock', 'paper', 'scissors']
+computer_choice = random.choice(computer_options)
+user_choice = input("'rock', 'paper', 'scissors'").strip().lower()
+print (f"Your choice is {user_choice}")
+print (f"Computer choice is {computer_choice}")
+
+if computer_choice == user_choice :
+    print('Draw')
+
+elif ( computer_choice == 'rock' and user_choice == 'scissors' or
+       computer_choice == 'scissors' and user_choice == 'paper' or
+       computer_choice == 'paper' and user_choice == 'rock' 
+      ) :
+    print ('Computer wins') 
+else : 
+    print ('Congrats. You win')      
